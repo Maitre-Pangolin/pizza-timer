@@ -1,0 +1,77 @@
+:root {
+  --color-light: white;
+  --color-dark: #212121;
+  --color-signal: #fab700;
+  
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-accent: var(--color-signal);
+  
+}
+
+body{
+  font-family: 'Gabarito',Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+}
+
+.counter-container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  margin:0
+}
+
+h1{
+  font-size:20em;
+}
+
+
+.form-container {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color:var(--color-accent);
+  padding:20px;
+}
+
+
+#applyButton{
+
+  background-color: var(--color-light);
+  color:var(--color-dark);
+  border:none
+}
+
+#counter{
+  color:var(--color-accent);
+  
+}
+
+@media only screen and (min-width: 430px) {
+h1{
+  font-size:40em;
+}
+}
+
+
+@media only screen and (min-width: 1025px) {
+  .form-container {
+    position:fixed;
+    top :5vh;
+    left: 5vh;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    background-color:var(--color-accent);
+    padding:20px;
+    box-shadow: 10px 10px;
+}
+
+h1{
+  font-size:40em;
+}
+}
